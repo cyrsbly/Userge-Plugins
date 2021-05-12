@@ -45,7 +45,7 @@ async def ph_comment(message: Message):
         await message.err("```Input not found!...```", del_in=3)
         return
     await message.delete()
-    await message.edit("```Creating A PH Comment 😜```", del_in=1)
+    await message.edit("**Creating A PH Comment.**", del_in=1)
     comment = deEmojify(comment)
 
     if user.photo:
@@ -58,7 +58,7 @@ async def ph_comment(message: Message):
         loc_f = "https://telegra.ph/file/9844536dbba404c227181.jpg"
     path = await phcomment(loc_f, comment, name)
     if path == "ERROR":
-        return await message.edit("😔 Something Wrong see Help!", del_in=2)
+        return await message.edit("ERROR: Message too long.", del_in=2)
     chat_id = message.chat.id
     await message.delete()
     await message.client.send_photo(
