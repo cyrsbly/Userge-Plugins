@@ -53,7 +53,7 @@ async def among_us(message: Message):
     else:
         await message.err("`Input not found!...`", del_in=5)
         return
-    await message.edit("What the SUS")
+    await message.edit("🌀 __Processing..__")
     if message.flags:
         choice = list((message.flags).keys())[0]
         choice = choice.replace("-", "")
