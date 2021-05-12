@@ -53,7 +53,7 @@ async def among_us(message: Message):
     else:
         await message.err("`Input not found!...`", del_in=5)
         return
-    await message.edit("🌀 __Processing..__")
+    await message.edit("🌀 __Processing..__\n\n🤖 Follow [Cy Music Bot](https://t.me/cyuserbot1)")
     if message.flags:
         choice = list((message.flags).keys())[0]
         choice = choice.replace("-", "")
