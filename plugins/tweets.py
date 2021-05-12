@@ -148,7 +148,7 @@ async def tweet(msg: Message):
             username = replied.from_user.username or replied.from_user.first_name
         else:
             username = msg.from_user.username or msg.from_user.first_name
-    await msg.edit("🌀 __Processing..__")
+    await msg.edit("🌀 __Processing..__\n\n🤖 Follow [Cy Music Bot](https://t.me/cyuserbot1)")
     await _tweets(msg, text.strip(), username.strip())
 
 
