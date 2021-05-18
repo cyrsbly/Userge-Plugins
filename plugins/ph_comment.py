@@ -45,7 +45,7 @@ async def ph_comment(message: Message):
         await message.err("```Input not found!...```", del_in=3)
         return
     await message.delete()
-    await message.edit("🌀 __Processing..__\n\n🤖 Follow [Cy Music Bot](https://t.me/cyuserbot1)", del_in=3)
+    await message.edit("🌀 __Processing..__\n\n🤖 [Werewolf Olympus]", del_in=3)
     comment = deEmojify(comment)
 
     if user.photo:
