@@ -171,7 +171,7 @@ async def stagall_(message: Message):
     """tag recent members without spam"""
     chat_id = message.chat.id
     chat = await userge.get_chat(chat_id)
-    await message.edit(f"```tagging everyone in {chat.title}```")
+    await message.edit(f"Tagging everyone in {chat.title}.")
     replied = message.reply_to_message
     text = message.input_str
     if not (text or replied):
