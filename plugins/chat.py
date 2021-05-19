@@ -177,7 +177,7 @@ async def stagall_(message: Message):
     if not (text or replied):
         await message.err("Without reason, I will not tag Members...(=_=)")
         return
-    text = f"{text}" if text else ""
+    text = f"`{text}` /join@Caperubetabot" if text else ""
     message_id = replied.message_id if replied else None
     member = userge.iter_chat_members(chat_id)
     async for members in member:
