@@ -21,9 +21,9 @@ async def random_pick_(message: Message):
         return
     pick = rand_array(a)
     result = f"""
-**Query: **
+**Choices: **
 `{input_str}`
-**Output: **
+**Result: **
 `{pick}`
 """
     await message.edit(result)
