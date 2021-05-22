@@ -28,7 +28,7 @@ async def count_it_down(message: Message):
     pattern = r"%%(?:[0-9]{2}-[0-9]{2}-[0-9]{2})%%"  # Checking if format is Valid
     match = re.search(pattern, args)
     if not match:
-        return await message.err("Format Invalid ! See Help For More Info !", del_in=5)
+        return await message.err("Format invalid!", del_in=5)
     reply_id = reply.message_id if reply else None
     await message.delete()
     try:
